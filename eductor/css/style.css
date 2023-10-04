@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,500&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    width:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width:80% ;
+    border: 1px solid whitesmoke;
+    border-radius: 50px; 
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    cursor: pointer;
+}
+.nav-list{
+width: 50%;
+/* background-color:purple; */
+display: flex;
+justify-content: center;
+ align-items: center ; 
+}
+.nav-list li{
+    list-style: none;
+    padding: 30px 40px ;
+
+}
+.nav-list li a{
+text-decoration: none;
+color: antiquewhite;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color:purple;
+    }
+.rightnav{
+    text-align: right;
+    width: 50%;
+    padding: 0 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 16px;
+    border:2px solid grey ;
+    border-radius: 8px; 
+}
+.background{
+    background: rgba(0,0,0,0.7) url('../img/background.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(246, 241, 241);
+    height: 70%;
+    max-width: 50%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+.first-half{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.second-half{
+    width: 30%;
+}
+ .second-half img{
+    width: 70%;
+    border:4px solid white;
+    border-radius: 150px;
+    display: block;
+    margin:auto;
+ }
+ .text-big{
+    font-size: 25px;
+    padding: 12px 0px;
+
+ }
+ .text-small{
+    font-size: 15px;
+ }
+ .btn{
+     /* border: 2px solid white;  */
+     border-radius:8px;
+    padding: 8px 20px ;
+    cursor: pointer;
+    margin: 7px;
+    background: none;
+    color: white;
+
+ }
+ .btn:hover{
+    text-decoration: none;
+    color: red;
+    
+ }
+.btn-sm{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+.section{
+   height: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: auto;
+   max-width: 80%;
+   font-family: 'Ubuntu', sans-serif;
+}
+.paras{
+    padding: 0px 65px  ;
+}
+
+.section-Left{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    width:250px;
+    border:2px solid black;
+    border-radius: 26px;
+    margin-top: 19px;
+}
+.contact{
+    background:rgba(1, 1, 1, 0.7) url('../img/contact.jpg');
+    background-blend-mode: darken;
+
+    background-size: cover;
+    /* background-color: bisque; */
+    height: 85vh;
+    position: relative;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2px;
+}
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius: 10%;
+}
+.contactform h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+    z-index: 0;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span
+
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translatey(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px ;
+    font-size: 18px;
+}
+
+.text-center{
+    text-align: center;
+    font-size:34px;
+    padding: 30px;
+    font-family:'Ubuntu', sans-serif;
+}
+.footer-text{
+    text-align: center;
+    font-size:12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    padding: 30px 0px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+@media (max-width:991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container ,.contactinfo,
+    .contactform{
+        width: 100%;
+    }
+}
